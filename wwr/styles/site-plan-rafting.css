@@ -1,0 +1,66 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=YourHeadingFont&family=YourParagraphFont&display=swap');
+
+/* Define CSS Variables */
+:root {
+  --primary-color: #XXXXXX;
+  --secondary-color: #XXXXXX;
+  --accent1-color: #XXXXXX;
+  --accent2-color: #XXXXXX;
+
+  --heading-font: '_______','Agbalumo', sans-serif;
+  --paragraph-font: '_______','Playpen Sans', sans-serif;
+
+  --nav-background-color: #XXXXXX;
+  --nav-link-color: #XXXXXX;
+  --nav-hover-link-color: #XXXXXX;
+  --nav-hover-background-color: #XXXXXX;
+}
+
+/* Body Rule */
+body {
+  font-family: Arial, Verdana, sans-serif;
+  max-width: 960px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Headings Grouping Selector */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header Selector */
+header {
+  padding: 20px;
+  background-color: var(--accent1-color);
+}
+
+/* Paragraph Selector */
+p {
+  padding: 25px;
+}
+
+/* Navigation Styles */
+nav {
+  background-color: var(--nav-background-color);
+  font-size: 1.2rem;
+  display: flex;
+}
+
+nav a {
+  display: block;
+  color: var(--nav-link-color);
+  text-decoration: none;
+  padding: 1rem;
+}
+
+nav a:link, nav a:visited {
+  color: var(--nav-link-color);
+}
+
+nav a:hover {
+  color: var(--nav-hover-link-color);
+  background-color: var(--nav-hover-background-color);
+}
