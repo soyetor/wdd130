@@ -37,6 +37,7 @@ img {
     box-shadow: 0 0 30px #333;
 }
 
+
 p {
     padding: 10px;
 }
@@ -86,4 +87,10 @@ footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
+}
+
+li {
+    background-color: rgb(223, 241, 255);
+    padding: 10px;
+    text-align: left;
 }
