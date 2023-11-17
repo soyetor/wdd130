@@ -1,3 +1,18 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Class Selectors */
+.box {
+    margin: 1rem;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+    background-color: #ddd;
+    color: #000;
+}
+
 nav {
     background-color: steelblue;
     padding: 10px;
@@ -29,17 +44,17 @@ p {
 main {
     max-width: 340px;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
     text-align: center;
-    }
+}
 
 aside {
     width: 20rem;
     margin: 1rem;
-    border: 1px solid rgba(0, 0, 0, 0.2); /* 1 */
+    border: 1px solid rgba(0, 0, 0, 0.2);
     padding: 1rem;
     background-color: #eee;
     color: #333;
@@ -56,12 +71,12 @@ main img {
     height: auto;
 }
 
-p { padding: 0;}
+p {
+    padding: 0;
+}
 
 footer {
     margin-top: 15px;
     border-top: 1px solid #000;
     text-align: center;
 }
-
-
