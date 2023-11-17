@@ -61,6 +61,12 @@ aside {
     text-align: center;
 }
 
+aside h2 {
+    position: absolute;
+    top: 47px;
+    left: 150px;
+}
+
 aside img {
     width: 200px;
     height: auto;
@@ -69,6 +75,7 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    float: right;
 }
 
 p {
