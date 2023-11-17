@@ -76,7 +76,11 @@ aside img {
 main img {
     width: 150px;
     height: auto;
+    border: 1px solid steelblue;
+    padding: 2px;
+    box-shadow: 0 0 30px gray;
     float: right;
+    margin: 0 0 1rem 1rem;
 }
 
 p {
@@ -93,4 +97,12 @@ li {
     background-color: rgb(255, 255, 255);
     padding: 10px;
     text-align: left;
+}
+
+body {
+    font-size: 16px;
+}
+
+.indent {
+    padding-left: 2rem;
 }
