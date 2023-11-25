@@ -129,7 +129,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .reviews {
-  color: rgb(167, 189, 223)2, 218);
+  color: rgb(167, 189, 223);
 }
 
 .container button {
@@ -253,7 +253,7 @@ select {
 .radio-group {
   display: block;
   gap: 5px;
-  align-items: left;
+  align-items: flex-start;
 }
 
 .radio-group input[type="radio"] {
@@ -276,7 +276,7 @@ select {
   background-color: #3498db;
 }
 
-.contactContentbutton,
+.contactContent button,
 .newsletterbutton {
   background-color: #afafd6;
   color: #fff;
@@ -333,7 +333,7 @@ footer a {
 }
 
 .card {
-  flex: 1 0 250px 250px 250px;
+  flex: 1 0 250px;
 }
 
 .container-b {
