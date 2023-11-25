@@ -27,6 +27,7 @@ nav a {
 
 h1 {
     color: steelblue;
+    border-bottom: 1px solid steelblue;
 }
 
 img {
@@ -105,4 +106,10 @@ body {
 
 .indent {
     padding-left: 2rem;
+}
+
+.grid {
+    display: grid;
+    align-items: center;
+    grid-template-columns: auto 1fr;
 }
