@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Basic HTML and CSS Quiz</title>
+  <link rel="stylesheet" href="styles/quiz.css">
+  <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="box">
+    <header>
+      <h1>Basic HTML and CSS Quiz</h1>
+    </header>
+    <form id="quizForm" class="quiz">
+      <!-- Question 1 -->
+      <div class="question">
+        <label for="q1">Question 1: Fill in the blank - HTML stands for HyperText Markup ______.</label>
+        <input type="text" id="q1" name="q1" required>
+      </div>
+
+      <!-- Question 2 -->
+      <div class="question">
+        <label for="q2">Question 2: Explain the purpose of the CSS Box Model in a few sentences:</label>
+        <textarea id="q2" name="q2" rows="4" required></textarea>
+      </div>
+
+      <!-- Question 3 -->
+      <div class="question">
+        <label for="q3">Question 3: What does CSS stand for?</label>
+        <select id="q3" name="q3" required>
+          <option value="" selected disabled>Choose One...</option>
+          <option value="cascading">Cascading Style Sheets</option>
+          <option value="central">Central Style Sheets</option>
+          <option value="computer">Computer Style Sheets</option>
+        </select>
+      </div>
+
+      <!-- Question 4 -->
+      <div class="question">
+        <label for="q4">Question 4: How many heading levels are there in HTML5?</label>
+        <input type="number" id="q4" name="q4" required>
+      </div>
+
+      <!-- Submit Button -->
+      <button type="submit">Submit Quiz</button>
+    </form>
+    <footer>
+      <p>&copy; 2023 Basic HTML and CSS Quiz</p>
+    </footer>
+  </div>
+</body>
+
+</html>
