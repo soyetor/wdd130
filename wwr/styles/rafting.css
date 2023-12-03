@@ -1,14 +1,14 @@
 :root {
-  --primary-color: #b4baeb;
-  --secondary-color: #4f72e7;
+  --primary-color: rgb(32, 121, 69);
+  --secondary-color: #ffffff;
   --accent1-color: #ffffff;
-  --accent2-color: #0b7075;
-  --I-decide-color: rgb(24, 185, 92);
+  --accent2-color: #ffffff;
+  --I-decide-color: rgb(68, 156, 105);
   --heading-font: 'Agbalumo', sans-serif;
   --paragraph-font: 'Playpen Sans', sans-serif;
   --nav-background-color: #afdda3;
   --nav-link-color: #d1e1ec;
-  --nav-hover-link-color: #4fafe7;
+  --nav-hover-link-color: #ffffff;
   --nav-hover-background-color: #129CA3;
 }
 
@@ -25,9 +25,13 @@ body {
   background-color: #fff;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
+}
+
+h2 {
+  text-align: center;
 }
 
 .h7 {
@@ -37,7 +41,7 @@ h1, h2, h3, h4, h5, h6 {
 
 .aboutHeader {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
   align-items: center;
   background-color: var(--nav-background-color);
   padding: 22px;
@@ -207,7 +211,7 @@ select {
 
 .contactContent button,
 .newsletterbutton {
-  background-color: #afafd6;
+  background-color: var(--accent2-color);
   color: #fff;
   padding: 14px 22px;
   border: none;
@@ -215,10 +219,6 @@ select {
   margin: 0 auto;
   width: 90%;
   cursor: pointer;
-}
-
-.newsletterbutton {
-  background-color: var(--accent2-color);
 }
 
 footer {
@@ -245,6 +245,7 @@ footer a {
 }
 
 .sociallinks img {
+  color: rgb(158, 218, 158)fff;
   width: 30px;
   height: auto;
 }
@@ -279,10 +280,6 @@ footer a {
   margin: 0 auto;
 }
 
-h2 {
-  text-align: center;
-}
-
 section {
   display: flex;
   justify-content: space-evenly;
@@ -308,19 +305,18 @@ section img {
   align-items: center;
 }
 
-@media (max-width: 768px) {
+@media {
   .box,
   .google-map iframe {
     width: 100%;
     padding: 1em;
   }
-
+  
   .employee-profiles img {
     width: 80px;
   }
 
   .contact-form,
-  .employee-profiles,
   .contact-info {
     margin-bottom: 1em;
   }
@@ -329,6 +325,7 @@ section img {
 .employee-profiles {
   text-align: center;
   padding: 1em;
+  margin-bottom: 1em;
 }
 
 .employee-profiles .team-member {
