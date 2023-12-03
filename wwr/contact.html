@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contact Us - River Rapid Adventures</title>
+  <meta name="description" content="Get in touch with River Rapid Adventures for inquiries about our services and thrilling rafting experiences.">
+  <link rel="stylesheet" href="styles/rafting.css">
+</head>
+
+<body>
+
+  <header class="aboutHeader">
+    <img src="images/logo.png" alt="River Rapid Adventures Logo" class="logo">
+    <h1>River Rapid Adventures</h1>
+    <nav class="aboutNavbar">
+      <a href="#">Service</a>
+      <a href="#">Products</a>
+      <a href="#">History</a>
+      <a href="contact.html">Contact</a>
+      <a href="#">Home</a>
+    </nav>
+  </header>
+
+  <section class="employee-profiles">
+    <h2>Meet Our Team</h2>
+    <div class="team-member">
+      <figure>
+        <img src="images/employee1.jpg" alt="Tom - Level 1 guide">
+        <figcaption>Tom - Level 1 guide</figcaption>
+      </figure>
+    </div>
+    <div class="team-member">
+      <figure>
+        <img src="images/employee3.jpg" alt="Josh - Level 2 guide">
+        <figcaption>Bob - Level 2 guide</figcaption>
+      </figure>
+    </div>
+    <div class="team-member">
+      <figure>
+        <img src="images/employee2.jpg" alt="Bob - Level 3 guide">
+        <figcaption>Josh - Level 3 guide</figcaption>
+      </figure>
+    </div>
+  </section>
+
+  <main>
+
+    <div class="google-map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m23!1m12!1m3!1d19229.18880681539!2d-121.2997774093455!3d38.62251031174348!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!4m8!3e0!4m0!4m5!1s0x809addc16d332cd9%3A0x9ce96f30705391f1!2sSan%20Juan%20Rapids%2C%20American%20River%20Trail%2C%20%231%2C%20Fair%20Oaks%2C%20CA%2095628%2C%20Estados%20Unidos!3m2!1d38.6304337!2d-121.2892217!5e0!3m2!1ses-419!2smx!4v1701567285338!5m2!1ses-419!2smx" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <section class="box">
+      <h2>Get in Touch</h2>
+      <form id="contactForm">
+        <label for="name">Your Name:</label>
+        <input type="text" id="name" name="name" required>
+
+        <label for="email">Your Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <label>Purpose of Message:</label>
+        <div>
+          <input type="radio" id="general" name="purpose" value="general" required>
+          <label for="general">General Inquiry</label>
+        </div>
+        <div>
+          <input type="radio" id="reservation" name="purpose" value="reservation">
+          <label for="reservation">Reservation Question</label>
+        </div>
+        <div>
+          <input type="radio" id="suggestion" name="purpose" value="suggestion">
+          <label for="suggestion">Website Suggestion</label>
+        </div>
+
+        <label for="message">Your Message:</label>
+        <textarea id="message" name="message" rows="4" required></textarea>
+
+        <div>
+          <input type="checkbox" id="newsletter" name="newsletter">
+          <label for="newsletter">Please subscribe me to the monthly newsletter</label>
+        </div>
+
+        <button type="submit" class="submit-button">Send Message</button>
+
+      </form>
+
+    </section>
+    <section class="contact-info">
+        <h2>Contact Information</h2>
+        <p>123 River Street, Raftville, Adventureland</p>
+        <p>Phone: (123) 456-7890</p>
+        <p>Email: contact@riverrapidadventures.com</p>
+  
+    </section>
+
+  </main>
+
+  <footer>
+    <p>&copy; 2023 River Rapid Adventures | Hector Jimenez</p>
+    <div class="sociallinks">
+      <a href="#" target="_blank"><img src="images/facebook-icon.png" alt="Facebook"></a>
+      <a href="#" target="_blank"><img src="images/twitter-icon.png" alt="Twitter"></a>
+      <a href="#" target="_blank"><img src="images/instagram-icon.png" alt="Instagram"></a>
+    </div>
+  </footer>
+
+</body>
+
+</html>

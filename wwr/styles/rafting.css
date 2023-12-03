@@ -1,3 +1,4 @@
+/* Root variables */
 :root {
   --primary-color: #0e4369;
   --secondary-color: #4f72e7;
@@ -14,17 +15,22 @@
   --nav-hover-background-color: #129CA3;
 }
 
+/* Universal selector */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
 
+/* Body and paragraph styles */
 body {
   font-family: var(--paragraph-font);
   padding: 20px;
+  line-height: 1.6;
+  background-color: #fff; /* Assuming you want a white background */
 }
 
+/* Heading styles */
 h1, h2, h3, h4, h5, h6 {
   font-family: var(--heading-font);
   color: var(--primary-color);
@@ -35,6 +41,61 @@ h1, h2, h3, h4, h5, h6 {
   color: var(--I-decide-color);
 }
 
+/* Header styles */
+.aboutHeader {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  align-items: center;
+  background-color: var(--nav-background-color);
+  padding: 22px;
+  grid-gap: 20px;
+  margin-bottom: 10px;
+}
+
+
+Certainly! Below is the adjusted CSS code. I have combined the .container rules into one, removed the duplicate universal selector, and cleaned up the rules to ensure there's no redundancy.
+
+css
+Copy code
+/* Root variables */
+:root {
+  --primary-color: #0e4369;
+  --secondary-color: #4f72e7;
+  --accent1-color: #92c2cfbd;
+  --accent2-color: #129CA3;
+  --I-decide-color: rgb(24, 185, 92);
+
+  --heading-font: 'Agbalumo', sans-serif;
+  --paragraph-font: 'Playpen Sans', sans-serif;
+
+  --nav-background-color: #afdda3;
+  --nav-link-color: #396E94;
+  --nav-hover-link-color: #4fafe7;
+  --nav-hover-background-color: #129CA3;
+}
+
+/* Universal selector */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body and paragraph styles */
+body {
+  font-family: var(--paragraph-font);
+  padding: 20px;
+  line-height: 1.6;
+  background-color: #fff; /* Assuming you want a white background */
+}
+
+/* Heading styles */
+h1, h2, h3, h4, h5, h6 {
+  font-family: var(--heading-font);
+  color: var(--primary-color);
+}
+
+/* Header styles */
 .aboutHeader {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -52,14 +113,11 @@ h1, h2, h3, h4, h5, h6 {
   height: auto;
 }
 
+/* Navbar styles */
 .aboutNavbar {
   display: flex;
   justify-content: center;
   align-items: center;
-  width: fit-content;
-  height: auto;
-  padding: 0px;
-  margin: 0;
   background-color: var(--nav-hover-link-color);
 }
 
@@ -67,16 +125,20 @@ h1, h2, h3, h4, h5, h6 {
   text-decoration: none;
   color: var(--primary-color);
   padding: 16px 32px;
-  margin: 0;
-}
-
-.aboutNavbar a:last-child {
-  border-right: none;
 }
 
 .aboutNavbar a:hover {
   background-color: var(--accent1-color);
   color: var(--nav-link-color);
+}
+
+/* Container styles */
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: flex-start;
+  gap: 16px;
 }
 
 .indexContent {
@@ -292,9 +354,10 @@ select {
   background-color: var(--accent2-color) !important;
 }
 
+/* Footer styles */
 footer {
   display: flex;
-  justify-content: flex-end;
+  justify-content: space-between;
   align-items: center;
   background-color: var(--primary-color);
   color: var(--secondary-color);
@@ -307,7 +370,6 @@ footer p {
 }
 
 footer a {
-  text-decoration: none !important;
   color: var(--nav-link-color);
 }
 
@@ -316,20 +378,9 @@ footer a {
   gap: 10px;
 }
 
-.sociallinks a {
-  text-decoration: none;
-}
-
 .sociallinks img {
   width: 30px;
   height: auto;
-}
-
-.container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: space-evenly;
-  align-items: flex-start;
 }
 
 .card {
@@ -376,4 +427,141 @@ section img {
   width: 100%;
   max-width: 200px;
   height: auto;
+}
+
+.box {
+  width: auto;
+  background-color: #fff;
+  border: 5px solid rgb(128, 157, 196);
+  border-radius: 5px;
+  padding: 50px;
+  margin: 20px; 
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: var(--paragraph-font);
+  line-height: 1.6; 
+  color: var(--primary-color); 
+  background: #fff; 
+}
+
+a {
+  color: var(--primary-color);
+  text-decoration: none; 
+}
+
+button,
+input[type="text"],
+input[type="email"],
+textarea,
+select {
+  font: inherit; 
+  padding: 0.5em;
+  border-radius: 0.25em;
+  border: 1px solid var(--primary-color);
+  margin-bottom: 1em;
+}
+
+button {
+  background-color: var(--secondary-color);
+  color: white;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: darken(var(--secondary-color), 10%);
+}
+
+.contact-info, .employee-profiles {
+  text-align: center;
+  padding: 1em;
+}
+
+.history, .contact {
+  text-align: center;
+  padding: 20px;
+  border: 1px solid black;
+  margin-bottom: 10px;
+}
+
+.history h2, .contact h2 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.employee-profiles img {
+  border-radius: 25%;
+  width: auto;
+  height: auto;
+}
+
+/* Adjustments for the contact form */
+.contact-form {
+  background-color: var(--accent1-color);
+  padding: 2em;
+  border-radius: 0.5em;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+}
+
+.contact-form button {
+  background-color: var(--accent2-color);
+  color: white;
+  padding: 0.75em 1.5em;
+}
+
+/* Styling for radio buttons and checkboxes */
+.radio-group label,
+.contact-form input[type="checkbox"] + label {
+  padding-left: 1.5em;
+  position: relative;
+}
+
+.radio-group input[type="radio"],
+.contact-form input[type="checkbox"] {
+  position: absolute;
+  left: 0;
+}
+
+/* Adjustments for Google Map iframe */
+.google-map iframe {
+  width: 100%;
+  height: 450px;
+  border: none;
+}
+
+/* Adjust the box class used for the contact form */
+.box {
+  border-color: var(--primary-color); /* Use the primary color for the border */
+  /* Other styles remain the same */
+}
+
+/* Responsive design adjustments */
+@media (max-width: 768px) {
+  .box,
+  .google-map iframe {
+    width: 100%;
+    padding: 1em;
+  }
+
+  .employee-profiles img {
+    width: 80px;
+  }
+
+  .contact-form,
+  .employee-profiles,
+  .contact-info {
+    margin-bottom: 1em;
+  }
 }
