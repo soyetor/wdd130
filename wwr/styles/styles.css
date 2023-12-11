@@ -13,6 +13,16 @@
     color: #000;
 }
 
+.aboutHeader {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    align-items: center;
+    background-color: var(--nav-background-color);
+    padding: 22px;
+    grid-gap: 20px;
+    margin-bottom: 10px;
+  }
+
 header {
     display: block;
 }
