@@ -2,46 +2,60 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="description" content="As the owner of this page, I thank you for taking interest. The purpose of this page is to allow me to learn in a guided manner how to comprehend, be able to read, and eventually be able to write my own html and css code.">
+    <meta name="description" content="Join us for thrilling white water rafting adventures.">
     <meta name="author" content="Hector A. Jimenez">
-    <title>Hector A. Jimenez | WDD 130</title>
-    <link rel="stylesheet" href="styles/styles.css">
+    <title>Rafting Adventures_Home</title>
+    <link rel="stylesheet" href="wwr/styles/rafting.css">
 </head>
 <body>
-    <header>
-        
-        <img src="images/logo.png" alt="Rafting Company Logo" width="280" style="float: right; margin-top: 10px; margin-right: 10px;">
-        <nav>
-            <a href="index.html">Home</a>
-            <a href="contact.html">Contact</a>
-            <a href="quiz.html">Quiz</a>
-            <a href="about.html">About</a>
+    <header class="aboutHeader">
+        <img src="wwr/images/logo.png" alt="River Rapid Adventures Logo" class="logo">
+        <h1>River Rapid Adventures</h1>
+        <h1>Home</h1>
+        <nav class="aboutNavbar">
+            <a href="wwr/trips.html" class="text-white">Trips</a>
+            <a href="wwr/contact.html" class="text-white">Contact</a>
+            <a href="wwr/about.html" class="text-white">About</a>
             <a href="https://www.linkedin.com/in/htr-jmz" target="_blank">LinkedIn</a>
             <a href="https://facebook.com" target="_blank">Facebook</a>
-            <a href="site-plan-rafting.html">Rafting Site Plan</a>
         </nav>
-        
     </header>
-      <div class="container">
-        <aside>
-            <h2>México</h2>
-            <img src="images/family.jpg" alt="Hector A. Jimenez" width="200">
-            <p>I am from a small town in Mexico called Jalostotitlán in the state of Jalisco. This picture is one I took with my youngest daughter on a trip to the nearest beach in our state, Puerto Vallarta.</p>
-        </aside>
-    <main class="container-b">
-        <h1>Hector A. Jimenez | WDD 130</h1>
-        <img src="images/profile.jpg" alt="Hector A. Jimenez" width="250" style="float: right;"> 
-        <p>Greetings! I'm Hector Jimenez, an enthusiastic student dedicated to the pursuit of knowledge. Beyond my academic pursuits in WDD 130 at BYU-Idaho, I relish delving into diverse hobbies and connecting with new individuals to broaden my experiences.</p>
-        <ul class="box indent">
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/brasilia-brazil-temple?lang=eng" target="_blank">Brasilia Brazil Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/calgary-alberta-temple?lang=eng" target="_blank">Calgary, Alberta, Canada Temple</a></li>
-            <li><a href="https://www.churchofjesuschrist.org/temples/details/hermosillo-sonora-mexico-temple?lang=eng" target="_blank">Hermosillo, Sonora, Mexico Temple</a></li>       
-        </ul>
+    <main>
+        <section class="hero">
+            <img src="wwr/images/rafting3.jpg" alt="Rafting Adventure" class="hero-image">
+            <h1>Welcome to Our White Water Rafting Adventures!</h1>
+        </section>
+        <section class="newsletter">
+            <h2>Stay Updated!</h2>
+            <form class="newsletter-form">
+                <input type="text" placeholder="Your Name">
+                <input type="email" placeholder="Your Email">
+                <button type="submit">Subscribe</button>
+            </form>
+        </section>
+        <section class="cta">
+            <p>Ready for the adventure of a lifetime? Check out our rafting trips!</p>
+            <a href="wwr/trips.html" class="cta-link">Explore Trips</a>
+        </section>
+        <section class="grid-layout">
+            <div class="grid-item">
+                <img src="wwr/images/rafting1.jpg" alt="Rafting Experience">
+                <p>Embark on a journey through thrilling rapids...</p>
+            </div>
+            <div class="grid-item">
+                <img src="wwr/images/rafting2.jpg" alt="Scenic Rafting">
+                <p>Enjoy serene rafting along scenic landscapes...</p>
+            </div>
+        </section>
     </main>
-
-        </div>
     <footer>
-        <p>@2024 🌟 Hector A. Jimenez 🌟 Jalostotitlán, Jalisco, Mexico</p>
+        <p>&copy; 2023 River Rapid Adventures | Hector Jimenez</p>
+        <div class="sociallinks">
+            <a href="https://wireframe.cc/pro/pp/4c00cd840707937" target="_blank">Wireframe</a>  
+            <a href="#" target="_blank"><img src="wwr/images/facebook-icon.png" alt="Facebook"></a>
+            <a href="#" target="_blank"><img src="wwr/images/twitter-icon.png" alt="Twitter"></a>
+            <a href="#" target="_blank"><img src="wwr/images/instagram-icon.png" alt="Instagram"></a>
+        </div>
     </footer>
 </body>
 </html>
