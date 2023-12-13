@@ -27,7 +27,7 @@ body {
   padding: 20px;
 }
 
-.full-width-image {
+.img {
   background-image: url('images/river.png');
   height: 100vh; 
   background-position: center;
@@ -43,14 +43,42 @@ body {
   font-size: 3em; 
 }
 
+.space {
+  height: 40px;
+}
+
+.cta-button {
+  background-color: #ffe600; /* Change as needed */
+  color: rgb(255, 0, 0);
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  font-size: 1em;
+  cursor: pointer;
+  text-decoration: none;
+  display: inline-block;
+}
+
+.cta-button:hover {
+  background-color: #0056b3; /* Darker shade for hover effect */
+}
+
 main {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Creates a three-column layout */
+  align-items: start; /* Aligns items to the start of each grid cell */
+  justify-content: center; /* Centers the entire grid horizontally */
+  gap: 20px; /* Space between grid items */
+  padding: 20px; /* Keeps the existing padding */
+}
+
+.stack {
   display: flex;
   flex-direction: column;
-  align-items: center; 
-  justify-content: center; 
-  flex: 1;
-  padding: 20px; 
+  align-items: center; /* Centers the images horizontally */
+  gap: 10px; /* Adjust the space between images */
 }
+
 
 footer {
   width: 100%;
